@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Patient Management</h1>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center">Admin Panel</h1>
+            <hr/>
+            <br/>
+            <a href="./trend-table.html">Go back to trend table</a>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <div>
+            <h3>Patient List</h3>
+            <ul id="patient-list"></ul>
+        </div>
+
+        <h3>Update Patient Data</h3>
+        <div>
+            <label>User ID:</label>
+            <input id="id" type="text" class="input-field" placeholder="User ID" required>
+        </div>
+        <div>
+            <label>Vaccine Status:</label>
+            <select id="vaccine">
+                <option value="not_vaccinated">Not vaccinated</option>
+                <option value="one_dose">One dose</option>
+                <option value="two_dose">Two dose</option>
+            </select>
+            <button type="submit" id="update-vaccine">Update Vaccine Status</button>
+        </div>
+        <div>
+            <label>Dead: </label>
+            <select id="dead">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <button type="submit" id="update-dead">Update is_dead</button>
+        </div>
+        
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

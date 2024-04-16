@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Patient Management</h1>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center">Trend Table</h1>
+            <hr/>
+            <br/>
+            <div id="cert-or-update"></div>
+            <button id="logout-btn">Logout</button>
+        </div>
+        
+      </div>
+    
+    <div class="container">
+    
+    <table class="table">
+        <tr>
+            <th>Average death rate</th>
+            <td id="death-rate"></th>
+        </tr>
+    </table>
+
+    <table class="table">
+        <tr>
+            <th>Higest District</th>
+            <th>No. of Patients</th>
+        </tr>
+        <tr>
+            <td id="highest-district"></td>
+            <td id="highest-patient"></td>
+        </tr>
+    </table>
+    <table class="table" id="median">
+        <tr>
+            <th>District</th>
+            <th>Median Age</th>
+        </tr>
+    </table>
+
+    <table class="table">
+        <tr>
+            <th>Age Group</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>Children</td>
+            <td id="children"></td>
+        </tr>
+        <tr>
+            <td>Teenagers</td>
+            <td id="teen"></td>
+        </tr>
+        <tr>
+            <td>Young</td>
+            <td id="young"></td>
+        </tr>
+        <tr>
+            <td>Elder</td>
+            <td id="elder"></td>
+        </tr>
+    </table>
+    
+    </div> 
+    </div>
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
